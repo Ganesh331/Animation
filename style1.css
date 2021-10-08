@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    /* border-radius: 20px; */
+    font-weight: 600;
+    color: green;
+    box-shadow: 10px 10px 50px aqua;
+    animation-name: my_first_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+
+div:nth-child(1){
+    margin-top: 110px;
+}
+div:nth-child(2){
+    margin-top: 20px;
+    animation-delay: 1s;
+}
+div:nth-child(3){
+    margin-top: -30px;
+    animation-delay: 2s;
+}
+div:nth-child(4){
+    animation-delay: 3s;
+    margin-top: 40px;
+}
+div:nth-child(5){
+    animation-delay: 4s;
+    margin-top: 70px;
+}
+
+
+@keyframes my_first_animation{
+    0%{
+        margin-bottom: 300px;
+    }
+    100%{
+        margin-top: 300px;
+    }
+}
